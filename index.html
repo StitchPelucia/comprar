@@ -1,6 +1,3 @@
-Claro! Abaixo está o seu HTML corrigido, levando em consideração os pontos discutidos anteriormente:
-
-```html
 <div data-layer="Frame 1 - button" className="Frame1Button" style={{
     width: 1422,
     height: 3168,
@@ -8,7 +5,7 @@ Claro! Abaixo está o seu HTML corrigido, levando em consideração os pontos di
     paddingRight: 321,
     paddingTop: 634,
     paddingBottom: 634,
-    background: 'linear-gradient(0deg, white 0%, white 100%), url(bg.png)', // Corrigido para incluir a URL do bg
+    background: 'linear-gradient(0deg, white 0%, white 100%), url(bg.png)', // Incluindo o bg.png
     backgroundSize: 'cover',
     flexDirection: 'column',
     justifyContent: 'flex-start',
@@ -55,5 +52,31 @@ Claro! Abaixo está o seu HTML corrigido, levando em consideração os pontos di
             left: 0,
             top: 0,
             position: 'absolute',
+            boxShadow: '-4px
+            7px 4.5px #63DDFF',
+            borderRadius: '9999px'}} src="img2.png" /> <!-- Certifique-se de usar a extensão correta -->
+        <img data-layer="img1" className="Img1" style={{
+            width: 334,
+            height: 334,
+            left: 0,
+            top: 334,
+            position: 'absolute',
             boxShadow: '-4px 7px 4.5px #63DDFF',
-            borderRadius: 
+            borderRadius: '9999px'}} src="img1.png" /> <!-- Certifique-se de usar a extensão correta -->
+      </div>
+    </div>
+    <div data-layer="Frame 3" className="Frame3" style={{
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        display: 'flex'
+    }}>
+      <div data-layer="ofert" className="Ofert" style={{ width: 780, height: 550 }}>
+        <span style={{ color: 'white', fontSize: 40, fontFamily: 'Inter', fontWeight: '900', wordWrap: 'break-word' }}>Oferta Especial!<br/></span>
+        <span style={{ color: 'white', fontSize: 32, fontFamily: 'Inter', fontWeight: '900', wordWrap: 'break-word' }}><br/></span>
+        <span style={{ color: 'white', fontSize: 32, fontFamily: 'Inter', fontWeight: '600', wordWrap: 'break-word' }}>Aproveite nosso desconto exclusivo por tempo limitado! Compre agora e ganhe 10% de desconto na sua primeira compra com o código: STITCH10.<br/><br/>Frete Grátis em compras acima de 2 unidades. Não fique de fora!<br/><br/>Clique agora e garanta sua pelúcia do Stitch! Transforme seus momentos em algo ainda mais especial com esse amigo incrível!</span>
+      </div>
+      <img data-layer="Button" className="Button" style={{ width: 739, height: 213 }} src="Button.png" /> <!-- Verifique se o botão também está na raiz -->
+    </div>
+  </div>
+</div>

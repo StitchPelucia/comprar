@@ -2,74 +2,38 @@
 
 body, html {
     height: 100%; /* Garantir que a div ocupe toda a altura da página */
-    margin: 0;
+    margin: 0; /* Remover margens do body */
 }
 
 .background-container {
-    position: fixed; /* Manter a imagem fixa enquanto rola */
-    top: 0;
-    left: 0;
-    width: 100%; /* Ocupa toda a largura da tela */
-    height: 100%; /* Ocupa toda a altura da tela */
-    background: url(bg.png) no-repeat center center; /* Define a imagem de fundo */
-    background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
-    z-index: -1; /* Coloca a imagem abaixo do conteúdo */
-}
-
+    position: fixed; /* Manter o fundo fixo */
+    top: 0; /* Alinhamento ao topo */
+    left: 0; /* Alinhamento à esquerda */
+    width: 100%; /* Ocupa 100% da largura da tela */
+    height: 100%; /* Ocupa 100% da altura da tela */
+    background: url(bg.png) no-repeat center center; /* Definir a imagem de fundo */
+    background-size: cover; /* Cobrir toda a área disponível */
+    z-index: -1; /* Colocar o fundo atrás do conteúdo */
 .content {
-    position: relative; /* Para garantir que o conteúdo fique acima da imagem */
-    color: white; /* Exemplo de cor do texto */
+    position: relative; /* Garantir que o conteúdo fique acima da imagem de fundo */
+    color: white; /* Cor do texto */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centralizar o texto */
 }
 
 .Frame1Button {
-    width: 1422px;
-    height: 3168px;
-    padding: 634px 321px;
-    background: linear-gradient(0deg, white 0%, white 100%), url(bg.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    max-width: 800px; /* Limitar a largura máxima para o conteúdo */
+    margin: auto; /* Centralizar o conteúdo */
 }
 
-.Frame3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.Group2 {
+    width: 334px; 
+    height: 668px; 
+    position: relative; 
+    margin: auto; /* Centralizar as imagens */
 }
 
-.Title {
-    width: 780px;
-    height: auto;
-    text-align: center;
-}
-
-.Benefit {
-    width: 407px;
-    height: 562px;
-}
-
-.Ofert {
-    width: 780px;
-    height: 550px;
-    text-align: center;
-}
-
-.Button {
-    width: 739px;
-    height: 213px;
-    align-self: center;
-}
-
-.Img1,
-.Img2 {
-    width: 334px;
-    height: 334px;
-    position: absolute;
-    box-shadow: -4px 7px 4.5px #63DDFF; 
-    border-radius: 9999px;
+.Img1, .Img2 {
+    width: 100%; /* Ajustar as imagens ao tamanho do contêiner */
+    height: auto; /* Manter a proporção da imagem */
 }

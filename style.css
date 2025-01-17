@@ -1,6 +1,9 @@
 body, html {
     height: 100%; /* Garantir que body e html ocupem 100% da altura da tela */
     margin: 0; /* Remover margens do body */
+    display: flex; /* Usar flexbox para centralização */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
 }
 
 .background-container {

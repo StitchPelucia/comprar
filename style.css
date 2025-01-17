@@ -27,6 +27,7 @@ body, html {
 
 .Frame1Button {
     max-width: 180px; /* Limitar a largura máxima para o conteúdo */
+    padding: 15px 0px 15px 0px;
     margin: auto; /* Centralizar o conteúdo */
     background: transparent; /* Garantir que não tenha fundo branco */
 }
@@ -34,11 +35,13 @@ body, html {
 .Group2 {
     width: 334px; 
     height: 668px; 
+    padding: 15px 0px 15px 0px;
     position: relative; 
     margin: auto; /* Centralizar as imagens */
 }
 
 .Img1, .Img2 {
     width: 100%; /* Ajustar as imagens ao tamanho do contêiner */
+    padding: 15px 0px 15px 0px;
     height: auto; /* Manter a proporção da imagem */
 }

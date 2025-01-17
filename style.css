@@ -27,6 +27,7 @@ body, html {
 
 .Frame1Button {
     max-width: 180px; /* Limitar a largura máxima para o conteúdo */
+    width: 40%;
     padding: 15px 0px 15px 0px;
     margin: auto; /* Centralizar o conteúdo */
     background: transparent; /* Garantir que não tenha fundo branco */

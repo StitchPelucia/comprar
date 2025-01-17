@@ -1,21 +1,21 @@
-/* style.css */
-
 body, html {
-    height: 100%; /* Garantir que a div ocupe toda a altura da página */
+    height: 100%; /* Garantir que body e html ocupem 100% da altura da tela */
     margin: 0; /* Remover margens do body */
 }
 
 .background-container {
     position: fixed; /* Manter o fundo fixo */
-    top: 0; /* Alinhamento ao topo */
-    left: 0; /* Alinhamento à esquerda */
+    top: 0; /* Alinhar ao topo */
+    left: 0; /* Alinhar à esquerda */
     width: 100%; /* Ocupa 100% da largura da tela */
     height: 100%; /* Ocupa 100% da altura da tela */
     background: url(bg.png) no-repeat center center; /* Definir a imagem de fundo */
     background-size: cover; /* Cobrir toda a área disponível */
-    z-index: -1; /* Colocar o fundo atrás do conteúdo */
+    z-index: -1; /* Colocar a imagem de fundo atrás de outros conteúdos */
+}
+
 .content {
-    position: relative; /* Garantir que o conteúdo fique acima da imagem de fundo */
+    position: relative; /* Para garantir que o conteúdo fique acima do fundo */
     color: white; /* Cor do texto */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centralizar o texto */
@@ -24,6 +24,7 @@ body, html {
 .Frame1Button {
     max-width: 800px; /* Limitar a largura máxima para o conteúdo */
     margin: auto; /* Centralizar o conteúdo */
+    background: transparent; /* Garantir que não tenha fundo branco */
 }
 
 .Group2 {

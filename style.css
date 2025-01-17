@@ -1,19 +1,26 @@
 /* style.css */
 
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif; /* Certifique-se de que essa fonte está importada na sua página */
-}
-
 body, html {
     height: 100%; /* Garantir que a div ocupe toda a altura da página */
     margin: 0;
 }
 
 .background-container {
-    height: 100%; /* A div ocupa toda a altura do corpo */
-    background: url(bg.png) no-repeat center center; /* Define o bg.png como fundo */
+    position: fixed; /* Manter a imagem fixa enquanto rola */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura da tela */
+    background: url(bg.png) no-repeat center center; /* Define a imagem de fundo */
     background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+    z-index: -1; /* Coloca a imagem abaixo do conteúdo */
+}
+
+.content {
+    position: relative; /* Para garantir que o conteúdo fique acima da imagem */
+    color: white; /* Exemplo de cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
 }
 
 .Frame1Button {

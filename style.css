@@ -5,6 +5,17 @@ body {
     font-family: 'Inter', sans-serif; /* Certifique-se de que essa fonte está importada na sua página */
 }
 
+body, html {
+    height: 100%; /* Garantir que a div ocupe toda a altura da página */
+    margin: 0;
+}
+
+.background-container {
+    height: 100%; /* A div ocupa toda a altura do corpo */
+    background: url(bg.png) no-repeat center center; /* Define o bg.png como fundo */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+}
+
 .Frame1Button {
     width: 1422px;
     height: 3168px;
